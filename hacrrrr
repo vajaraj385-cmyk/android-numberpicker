@@ -1,0 +1,280 @@
+interface
+	NumberPicker.Formatter
+
+Interface used to format current value into a string for presentation. 
+interface
+	NumberPicker.OnScrollListener
+
+Interface to listen for the picker scroll state. 
+interface
+	NumberPicker.OnValueChangeListener
+
+Interface to listen for changes of the current value. 
+Inherited XML attributes
+From class android.widget.LinearLayout
+From class android.view.ViewGroup
+From class android.view.View
+Inherited constants
+From class android.widget.LinearLayout
+From class android.view.ViewGroup
+From class android.view.View
+Inherited fields
+From class android.view.View
+Public constructors
+NumberPicker(Context context)
+
+Create a new number picker.
+NumberPicker(Context context, AttributeSet attrs)
+
+Create a new number picker.
+NumberPicker(Context context, AttributeSet attrs, int defStyleAttr)
+
+Create a new number picker
+NumberPicker(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes)
+
+Create a new number picker
+Public methods
+void
+	computeScroll()
+
+Called by a parent to request that a child update its values for mScrollX and mScrollY if necessary.
+boolean
+	dispatchKeyEvent(KeyEvent event)
+
+Dispatch a key event to the next view on the focus path.
+boolean
+	dispatchTouchEvent(MotionEvent event)
+
+Pass the touch screen motion event down to the target view, or this view if it is the target.
+boolean
+	dispatchTrackballEvent(MotionEvent event)
+
+Pass a trackball motion event down to the focused view.
+AccessibilityNodeProvider
+	getAccessibilityNodeProvider()
+
+Gets the provider for managing a virtual view hierarchy rooted at this View and reported to AccessibilityServices that explore the window content.
+String[]
+	getDisplayedValues()
+
+Gets the values to be displayed instead of string values.
+int
+	getMaxValue()
+
+Returns the max value of the picker.
+int
+	getMinValue()
+
+Returns the min value of the picker.
+int
+	getSelectionDividerHeight()
+
+Retrieve the height for the divider that separates the currently selected value from the others.
+int
+	getSolidColor()
+
+Override this if your view is known to always be drawn on top of a solid color background, and needs to draw fading edges.
+int
+	getTextColor()
+float
+	getTextSize()
+int
+	getValue()
+
+Returns the value of the picker.
+boolean
+	getWrapSelectorWheel()
+
+Gets whether the selector wheel wraps when reaching the min/max value.
+void
+	jumpDrawablesToCurrentState()
+
+Call Drawable.jumpToCurrentState() on all Drawable objects associated with this view. If you override this method you must call through to the superclass implementation.
+boolean
+	onInterceptTouchEvent(MotionEvent event)
+
+Implement this method to intercept all touch screen motion events.
+boolean
+	onTouchEvent(MotionEvent event)
+
+Implement this method to handle pointer events.
+boolean
+	performClick()
+
+Call this view's OnClickListener, if it is defined.
+boolean
+	performLongClick()
+
+Calls this view's OnLongClickListener, if it is defined.
+void
+	scrollBy(int x, int y)
+
+Move the scrolled position of your view.
+void
+	setDisplayedValues(String[] displayedValues)
+
+Sets the values to be displayed.
+void
+	setEnabled(boolean enabled)
+
+Set the enabled state of this view.
+void
+	setFormatter(NumberPicker.Formatter formatter)
+
+Set the formatter to be used for formatting the current value.
+void
+	setMaxValue(int maxValue)
+
+Sets the max value of the picker.
+void
+	setMinValue(int minValue)
+
+Sets the min value of the picker.
+void
+	setOnLongPressUpdateInterval(long intervalMillis)
+
+Sets the speed at which the numbers be incremented and decremented when the up and down buttons are long pressed respectively.
+void
+	setOnScrollListener(NumberPicker.OnScrollListener onScrollListener)
+
+Set listener to be notified for scroll state changes.
+void
+	setOnValueChangedListener(NumberPicker.OnValueChangeListener onValueChangedListener)
+
+Sets the listener to be notified on change of the current value.
+void
+	setSelectionDividerHeight(int height)
+
+Set the height for the divider that separates the currently selected value from the others.
+void
+	setTextColor(int color)
+
+Sets the text color for all the states (normal, selected, focused) to be the given color.
+void
+	setTextSize(float size)
+
+Sets the text size to the given value.
+void
+	setValue(int value)
+
+Set the current value for the number picker.
+void
+	setWrapSelectorWheel(boolean wrapSelectorWheel)
+
+Sets whether the selector wheel shown during flinging/scrolling should wrap around the NumberPicker.getMinValue() and NumberPicker.getMaxValue() values.
+Protected methods
+int 	computeVerticalScrollExtent()
+
+Compute the vertical extent of the vertical scrollbar's thumb within the vertical range.
+int 	computeVerticalScrollOffset()
+
+Compute the vertical offset of the vertical scrollbar's thumb within the horizontal range.
+int 	computeVerticalScrollRange()
+
+Compute the vertical range that the vertical scrollbar represents.
+boolean 	dispatchHoverEvent(MotionEvent event)
+
+Dispatch a hover event.
+void 	drawableStateChanged()
+
+This function is called whenever the state of the view changes in such a way that it impacts the state of drawables being shown. If you override this method you must call through to the superclass implementation.
+float 	getBottomFadingEdgeStrength()
+
+Returns the strength, or intensity, of the bottom faded edge.
+float 	getTopFadingEdgeStrength()
+
+Returns the strength, or intensity, of the top faded edge.
+void 	onDetachedFromWindow()
+
+This is called when the view is detached from a window.
+void 	onDraw(Canvas canvas)
+
+Implement this to do your drawing.
+void 	onLayout(boolean changed, int left, int top, int right, int bottom)
+
+Called from layout when this view should assign a size and position to each of its children.
+void 	onMeasure(int widthMeasureSpec, int heightMeasureSpec)
+
+Measure the view and its content to determine the measured width and the measured height.
+Inherited methods
+From class android.widget.LinearLayout
+From class android.view.ViewGroup
+From class android.view.View
+From class java.lang.Object
+From interface android.view.ViewManager
+From interface android.view.ViewParent
+From interface android.view.accessibility.AccessibilityEventSource
+From interface android.graphics.drawable.Drawable.Callback
+From interface android.view.KeyEvent.Callback
+Public constructors
+NumberPicker
+Added in API level 11
+
+public NumberPicker (Context context)
+
+Create a new number picker.
+
+Parameters
+context
+	Context: The application environment.
+
+NumberPicker
+Added in API level 11
+
+public NumberPicker (Context context, 
+                AttributeSet attrs)
+
+Create a new number picker.
+
+Parameters
+context
+	Context: The application environment.
+
+attrs
+	AttributeSet: A collection of attributes.
+
+NumberPicker
+Added in API level 11
+
+public NumberPicker (Context context, 
+                AttributeSet attrs, 
+                int defStyleAttr)
+
+Create a new number picker
+
+Parameters
+context
+	Context: the application environment.
+
+attrs
+	AttributeSet: a collection of attributes.
+
+defStyleAttr
+	int: An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults.
+
+NumberPicker
+Added in API level 21
+
+public NumberPicker (Context context, 
+                AttributeSet attrs, 
+                int defStyleAttr, 
+                int defStyleRes)
+
+Create a new number picker
+
+Parameters
+context
+	Context: the application environment.
+
+attrs
+	AttributeSet: a collection of attributes.
+
+defStyleAttr
+	int: An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults.
+
+defStyleRes**This library is provided as-is and is not under active development**
+
+A backport of the Android 4.2 NumberPicker.
+
+
+Requires adding a single attribute to your theme. Check the sample app for how this is done.
